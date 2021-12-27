@@ -6,7 +6,7 @@
 /*   By: kahirose <kahirose@studnt.42tokyo.jp>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 11:23:39 by kahirose          #+#    #+#             */
-/*   Updated: 2021/12/01 17:17:58 by kahirose         ###   ########.fr       */
+/*   Updated: 2021/12/04 19:58:11 by kahirose         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,7 +116,8 @@ int	ft_printf(const char *s, ...)
 
 // 	return 0;
 // }
-// int main(int argc, char const *argv[])
+// #include <stdio.h>
+// int main(void)
 // {
 // 	int result;
 // 	int i = INT_MIN;
@@ -129,7 +130,16 @@ int	ft_printf(const char *s, ...)
 // 	printf("result:%d\n",result);
 // 	return 0;
 // }
+#include <stdio.h>
+int main(void)
+{
+	int i;
 
+	i = 20;
+	i = ft_printf("%d\n", i);
+	printf("%d\n", i);
+	return (0);
+}
 // int	main(void)
 // {
 // 	char	c = 'a';
@@ -153,9 +163,9 @@ int	ft_printf(const char *s, ...)
 // 	char str[] = "hello";
 // 	char str2[] = "world";
 
-// 	   i = printf("%p:%s%s:%c%%  %%%\b%\n", str, str, str2, c);
+// 	   i = printf("%p:%s%s:%c%%  %%%\b", str, str, str2, c);
 // 	printf("\n");
-// 	j = ft_printf("%p:%s%s:%c%%  %%%\b%\n", str, str, str2, c);
+// 	j = ft_printf("%p:%s%s:%c%%  %%%\b", str, str, str2, c);
 // 	printf("\n%d:%d\n", i, j);
 // 	return (0);
 // }
@@ -172,3 +182,4 @@ int	ft_printf(const char *s, ...)
 // 	printf("%d\n", i);
 // 	return (0);
 // }
+//
